@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Container do botão */
+        .switch {
+            position: relative;
+            width: 170px;
+            height: 50px;
+            background: #4caf50; /* Verde para o Brasil */
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .switch.active {
+            background: #3C3B6E; /* Azul para os EUA */
+        }
+
+        /* Botão deslizante */
+        .toggle {
+            position: relative;
+            left: -25px;
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .switch.active .toggle {
+            transform: translateX(50px); /* Move para a direita */
+        }
+
+        /* Bandeiras */
+        .flag {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flag.br {
+            background-image: url('https://flagcdn.com/w40/br.png'); /* Bandeira do Brasil */
+        }
+
+        .flag.us {
+            background-image: url('https://flagcdn.com/w40/us.png'); /* Bandeira dos EUA */
+        }
+
+        /* Esconde bandeira fora do estado ativo */
+        .switch .flag.br {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .switch.active .flag.br {
+            opacity: 0; /* Esconde a bandeira do Brasil */
+        }
+
+        .switch .flag.us {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .switch.active .flag.us {
+            opacity: 1; /* Mostra a bandeira dos EUA */
+        }
+    </style>
+</head>
+<body>
+    <div class="switch" id="language-switch">
+        <div class="flag br"></div>
+        <div class="toggle"></div>
+        <div class="flag us"></div>
+    </div>
+
+    <script>
+        const switchButton = document.getElementById("language-switch");
+
+        switchButton.addEventListener("click", () => {
+            // Alterna a classe "active" para animar o botão
+            switchButton.classList.toggle("active");
+
+            // Aqui você pode adicionar a lógica para alterar o idioma da página
+            if (switchButton.classList.contains("active")) {
+                console.log("Idioma: Inglês");
+                // Altere o conteúdo da página para inglês
+            } else {
+                console.log("Idioma: Português");
+                // Altere o conteúdo da página para português
+            }
+        });
+    </script>
+</body>
+</html>

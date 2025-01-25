@@ -1,0 +1,123 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+body {
+  background: linear-gradient(to bottom left, #1E3A8A, #1C9A67);    color: #fff; /* Fonte branca */
+      font-family: "Inter", sans-serif;
+  }
+
+/* Estilos Globais */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom left, #1E3A8A, #1C9A67); /* Azul e verde */
+  color: white;
+  text-align: center;
+}
+
+.container_one{
+  display: flex;
+  flex-direction: column; /* Organiza os itens na vertical */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  position: absolute; /* Permite posicionamento na tela */
+  top: 100px;
+  left: 150px;
+  gap: 10px;
+}
+
+.name {
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(187, 187, 187, 0.856);
+}
+
+/* Estilo do Container */
+.container1 {
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  border-radius: 10px;
+}
+
+/* Estilo do Cabeçalho */
+h1 {
+  margin: 0 0 20px;
+  font-size: 2.5em;
+}
+
+/* Estilo dos Parágrafos */
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Estilo dos Links */
+a {
+  color: #A7F3D0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+.col-3 a {
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  color: rgba(206, 206, 206, 0.89);
+  text-decoration: none;
+}
+
+.col-3 a:hover {
+  color: #ffffff; /* Cor ao passar o mouse */
+}
+
+/* From Left */
+.from-left:before, 
+.from-left:after {
+top: 0;
+width: 0;
+height: 100%;
+}
+
+.from-left:before {
+right: 0;
+border: 1px solid var(--inv);
+border-left: 0;
+border-right: 0;  
+}
+
+.from-left:after {
+left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+width: 100%;
+}
