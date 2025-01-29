@@ -13,3 +13,14 @@ switchButton.addEventListener("click", () => {
         // Altere o conteúdo da página para português
     }
 });
+
+const seta = document.querySelector('.seta-topo');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    if (!seta.classList.contains('aparecer')) {
+      seta.classList.add('aparecer'); // Adiciona a classe para mostrar com a animação
+    }
+  } else {
+    seta.classList.remove('aparecer'); // Remove a classe quando volta ao topo
+  }
+});

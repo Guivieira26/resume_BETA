@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
 background: linear-gradient(to bottom left, #1E3A8A, #1C9A67);    color: #fff; /* Fonte branca */
     font-family: "Inter", sans-serif;
@@ -9,13 +12,42 @@ background: linear-gradient(to bottom left, #1E3A8A, #1C9A67);    color: #fff; /
         margin-left: 15px;
     }
 }
+.span-branco{
+    color: #ffffff;
+}
 .name {
     font-family: "Inter", sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.74);
   }
-  
+
+.title{
+    font-family: "Inter", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.918);
+}
+.text{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #cacfdb;
+}
+.cabecalho{
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem; /* Um pouco maior que o texto normal */
+  font-weight: 700;
+  display: inline-block; /* Para que o link seja tratado como um bloco e você possa manipular sua largura e altura */
+  transition: all 0.3s ease; /* Adiciona uma transição suave */
+  color: rgb(194, 194, 194); /* Ligeiramente mais opaco para destaque */
+  margin-bottom: 1rem; /* Adicionar espaço abaixo */
+}
+.cabecalho:hover {
+    transform: translateY(-10px); /* Faz o link subir um pouco quando o mouse passa por cima */
+    width: 150%; /* Aumenta a largura */
+    height: auto; /* Mantém a altura proporcional ao conteúdo */
+}  
 .subtitle {
     font-family: "Inter", sans-serif;
     font-size: 2rem;
@@ -114,6 +146,7 @@ p {
 /*INICIO SWITCH BUTTON*/
 .switch {
     position: fixed;
+    margin-right: 0;
     top:20px;
     right: 20px;
     width: 170px;
@@ -184,5 +217,53 @@ p {
 .switch.active .flag.us {
     opacity: 1; /* Mostra a bandeira dos EUA */
 }
-
 /*FIM SWITCH BUTTON*/
+/*Seta to Up*/
+.seta-topo {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: rgba(0, 0, 0, 0.459); /* Fundo arredondado */
+  border-radius: 50%;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: none; /* Oculto por padrão */
+  opacity: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.seta-topo img {
+  width: 30px; /* Ajusta o tamanho do ícone */
+  height: 30px;
+}
+
+.seta-topo.aparecer {
+  display: block;
+  opacity: 1;
+  animation: pop 0.3s ease; /* Aplica a animação quando a classe for adicionada */
+}
+
+.seta-topo:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1) translateY(-5px); /* Cresce 10% e sobe 5px */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+.seta-topo:active {
+  transform: scale(0.9);
+}
+
+/* Keyframes para a animação de "pop" */
+@keyframes pop {
+  0% {
+    transform: scale(0.8); /* Começa menor */
+    opacity: 0; /* Invisível */
+  }
+  50% {
+    transform: scale(1.2); /* Faz o "pop" maior */
+    opacity: 1; /* Visível */
+  }
+  100% {
+    transform: scale(1); /* Volta ao tamanho normal */
+  }
+}
