@@ -1,9 +1,0 @@
-https://github.com/RafaVPclark/RafaelClark/blob/main/index.html     - HTMl Clark
-https://github.com/RafaVPclark/RafaelClark/blob/main/JS/script.js   - JS Clark
-https://github.com/RafaVPclark/RafaelClark/blob/main/CSS/style.css  - CSS Clark
-https://www.figma.com/design/ugZrzivh0O5HGIFiHI8aZn/Untitled?node-id=3-39&t=QaUwNuqIFAaj1Ltj-0   - UX DESIGN
-https://rafaelclark.com.br/#exp-inicio    - CLark Site
-https://getbootstrap.com/docs/5.1/forms/checks-radios/   -Bootstrap Documentation
-https://chatgpt.com/c/6792bf07-192c-800d-bea8-a2c1f08b3eb9    -GPT HElp
-
-Fazer switch button com bandeira dos EUA e bandeira do Brasil

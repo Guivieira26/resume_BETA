@@ -1,269 +1,304 @@
 html {
-  scroll-behavior: smooth;
-}
-body {
-background: linear-gradient(to bottom left, #1E3A8A, #1C9A67);    color: #fff; /* Fonte branca */
-    font-family: "Inter", sans-serif;
-    overflow-x: hidden;
-    height: 100%;
-}
-@media (max-width: 768px) {
-    #sobre-mim {
-        margin-left: 15px;
-    }
-}
-.span-branco{
-    color: #ffffff;
-}
-.name {
-    font-family: "Inter", sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.74);
+    scroll-behavior: smooth;
   }
-
-.title{
+  body {
+  background: linear-gradient(to bottom left, #1E3A8A, #1C9A67);    color: #fff; /* Fonte branca */
+      font-family: "Inter", sans-serif;
+      overflow-x: hidden;
+      height: 100%;
+  }
+  @media (max-width: 768px) {
+      #sobre-mim {
+          margin-left: 15px;
+      }
+  }
+  .span-branco{
+      color: #ffffff;
+  }
+  .name {
+      font-family: "Inter", sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.74);
+    }
+  
+  .title{
+      font-family: "Inter", sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.918);
+  }
+  .text{
+      font-family: "Inter", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #cacfdb;
+  }
+  .cabecalho{
     font-family: "Inter", sans-serif;
-    font-size: 2.4rem;
+    font-size: 1.3rem; /* Um pouco maior que o texto normal */
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.918);
-}
-.text{
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #cacfdb;
-}
-.cabecalho{
-  font-family: "Inter", sans-serif;
-  font-size: 1.3rem; /* Um pouco maior que o texto normal */
-  font-weight: 700;
-  display: inline-block; /* Para que o link seja tratado como um bloco e você possa manipular sua largura e altura */
-  transition: all 0.3s ease; /* Adiciona uma transição suave */
-  color: rgb(194, 194, 194); /* Ligeiramente mais opaco para destaque */
-  margin-bottom: 1rem; /* Adicionar espaço abaixo */
-}
-.cabecalho:hover {
-    transform: translateY(-10px); /* Faz o link subir um pouco quando o mouse passa por cima */
-    width: 150%; /* Aumenta a largura */
-    height: auto; /* Mantém a altura proporcional ao conteúdo */
-}  
-.subtitle {
-    font-family: "Inter", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: rgba(187, 187, 187, 0.856);
-}
-
-/* Estilo básico do link */
-.col-3 a {
-    font-family: Arial, sans-serif;
-    font-size: 1.4rem;
-    color: rgba(224, 224, 224, 0.911);
-    text-decoration: none;
-    position: relative; /* Necessário para posicionar os pseudo-elementos */
-    overflow: hidden; /* Para esconder os pseudo-elementos fora do link */
-    display: inline-block; /* Necessário para aplicar transformações */
-    transition: transform 0.3s ease; /* Transição suave para o efeito */
-    transform-origin: center; /* Faz a transformação acontecer a partir do centro */
-}
-
-/* Cor ao passar o mouse */
-.col-3 a:hover {
-    color: #ffffff; /* Cor do texto ao passar o mouse */
-}
-
-/* Animação "From Left" */
-.col-3 a:before, 
-.col-3 a:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0; /* Faz com que a linha ocupe tanto a parte superior quanto a inferior */
-    width: 0;
-    height: 100%; /* Mantém a altura 100% para preencher o link */
-    transition: width 0.8s ease, height 0.8s ease; /* Controle da animação */
-    
-    background: rgba(206, 206, 206, 0.2); /* Fundo da animação (ou use transparent para bordas) */
-    z-index: -1; /* Fica atrás do texto */
-}
-
-@keyframes float {
+    display: inline-block; /* Para que o link seja tratado como um bloco e você possa manipular sua largura e altura */
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+    color: rgb(194, 194, 194); /* Ligeiramente mais opaco para destaque */
+    margin-bottom: 1rem; /* Adicionar espaço abaixo */
+  }
+  .cabecalho:hover {
+      transform: translateY(-10px); /* Faz o link subir um pouco quando o mouse passa por cima */
+      width: 150%; /* Aumenta a largura */
+      height: auto; /* Mantém a altura proporcional ao conteúdo */
+  }  
+  .subtitle {
+      font-family: "Inter", sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: rgba(187, 187, 187, 0.856);
+  }
+  
+  /* Estilo básico do link */
+  .col-3 a {
+      font-family: Arial, sans-serif;
+      font-size: 1.4rem;
+      color: rgba(224, 224, 224, 0.911);
+      text-decoration: none;
+      position: relative; /* Necessário para posicionar os pseudo-elementos */
+      overflow: hidden; /* Para esconder os pseudo-elementos fora do link */
+      display: inline-block; /* Necessário para aplicar transformações */
+      transition: transform 0.3s ease; /* Transição suave para o efeito */
+      transform-origin: center; /* Faz a transformação acontecer a partir do centro */
+  }
+  
+  /* Cor ao passar o mouse */
+  .col-3 a:hover {
+      color: #ffffff; /* Cor do texto ao passar o mouse */
+  }
+  
+  /* Animação "From Left" */
+  .col-3 a:before, 
+  .col-3 a:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0; /* Faz com que a linha ocupe tanto a parte superior quanto a inferior */
+      width: 0;
+      height: 100%; /* Mantém a altura 100% para preencher o link */
+      transition: width 0.8s ease, height 0.8s ease; /* Controle da animação */
+      
+      background: rgba(206, 206, 206, 0.2); /* Fundo da animação (ou use transparent para bordas) */
+      z-index: -1; /* Fica atrás do texto */
+  }
+  
+  @keyframes float {
+      0% {
+          transform: translateY(0) translateX(0); /* Posição inicial (sem movimento) */
+      }
+      50% {
+          transform: translateY(-4px) translateX(2px); /* Sobe um pouco e vai para a direita */
+      }
+      100% {
+          transform: translateY(0) translateX(0); /* Retorna à posição inicial */
+      }
+  }
+  
+  .col-3 a:before {
+      right: 1;
+      border: 1px solid rgba(230, 230, 230, 0.938);
+      border-left: 0;
+      border-right: 0;
+  }
+  
+  .col-3 a:after {
+      left: 1px;
+      border: 1px solid rgba(206, 206, 206, 0.89);
+      border-left: 0;
+      border-right: 0;
+  }
+  
+  /* Animação ao passar o mouse */
+  .col-3 a:hover:before, 
+  .col-3 a:hover:after {
+      width: 150%; /* Aumentei a largura para expandir mais */
+      height: 100%; /* Aumentei a altura para expandir mais */
+  }
+  
+  .divider {
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #fff, transparent);
+      margin: 40px auto;
+      width: 50%;
+  }
+  
+  .col-1 a {
+      color: rgba(224, 224, 224, 0.89);
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      
+      transition: transform 0.3s ease; /* Transição para suavizar o efeito */
+  }
+  
+  /* Efeito ao passar o mouse sobre .col-1 */
+  .col-1 a:hover {
+      color: #ffffff; /* Cor do texto ao passar o mouse */
+      transform: translateY(-10px) scale(1.2); /* Sobe 10px e aumenta 10% */
+  }
+  
+  p {
+      font-size: 1.2rem;
+  }
+  
+  /*INICIO SWITCH BUTTON*/
+  .switch {
+      position: fixed;
+      margin-right: 0;
+      top:20px;
+      right: 20px;
+      width: 170px;
+      height: 50px;
+      background: #4caf50; /* Verde para o Brasil */
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .switch.active {
+      background: #3C3B6E; /* Azul para os EUA */
+  }
+  
+  /* Botão deslizante */
+  .toggle {
+      position: relative;
+      left: -25px;
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+  }
+  
+  .switch.active .toggle {
+      transform: translateX(50px); /* Move para a direita */
+  }
+  
+  /* Bandeiras */
+  .flag {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .flag.br {
+      background-image: url('https://flagcdn.com/w40/br.png'); /* Bandeira do Brasil */
+  }
+  
+  .flag.us {
+      background-image: url('https://flagcdn.com/w40/us.png'); /* Bandeira dos EUA */
+  }
+  
+  /* Esconde bandeira fora do estado ativo */
+  .switch .flag.br {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+  }
+  
+  .switch.active .flag.br {
+      opacity: 0; /* Esconde a bandeira do Brasil */
+  }
+  
+  .switch .flag.us {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+  
+  .switch.active .flag.us {
+      opacity: 1; /* Mostra a bandeira dos EUA */
+  }
+  /*FIM SWITCH BUTTON*/
+  /*Seta to Up*/
+  .seta-topo {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: rgba(0, 0, 0, 0.459); /* Fundo arredondado */
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: none; /* Oculto por padrão */
+    opacity: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .seta-topo img {
+    width: 30px; /* Ajusta o tamanho do ícone */
+    height: 30px;
+  }
+  
+  .seta-topo.aparecer {
+    display: block;
+    opacity: 1;
+    animation: pop 0.3s ease; /* Aplica a animação quando a classe for adicionada */
+  }
+  
+  .seta-topo:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1) translateY(-5px); /* Cresce 10% e sobe 5px */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+  }
+  
+  .seta-topo:active {
+    transform: scale(0.9);
+  }
+  
+  /* Keyframes para a animação de "pop" */
+  @keyframes pop {
     0% {
-        transform: translateY(0) translateX(0); /* Posição inicial (sem movimento) */
+      transform: scale(0.8); /* Começa menor */
+      opacity: 0; /* Invisível */
     }
     50% {
-        transform: translateY(-4px) translateX(2px); /* Sobe um pouco e vai para a direita */
+      transform: scale(1.2); /* Faz o "pop" maior */
+      opacity: 1; /* Visível */
     }
     100% {
-        transform: translateY(0) translateX(0); /* Retorna à posição inicial */
+      transform: scale(1); /* Volta ao tamanho normal */
     }
-}
-
-.col-3 a:before {
-    right: 1;
-    border: 1px solid rgba(230, 230, 230, 0.938);
-    border-left: 0;
-    border-right: 0;
-}
-
-.col-3 a:after {
-    left: 1px;
-    border: 1px solid rgba(206, 206, 206, 0.89);
-    border-left: 0;
-    border-right: 0;
-}
-
-/* Animação ao passar o mouse */
-.col-3 a:hover:before, 
-.col-3 a:hover:after {
-    width: 150%; /* Aumentei a largura para expandir mais */
-    height: 100%; /* Aumentei a altura para expandir mais */
-}
-
-
-
-
-.col-1 a {
-    color: rgba(224, 224, 224, 0.89);
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
+  }
+  
+  /*Inicio crousel*/
+  
+  .pic-ctn {
+      position: relative;
+      width: 100vw;
+      height: 300px;
+      margin-top: 15vh;
+  }
     
-    transition: transform 0.3s ease; /* Transição para suavizar o efeito */
-}
-
-/* Efeito ao passar o mouse sobre .col-1 */
-.col-1 a:hover {
-    color: #ffffff; /* Cor do texto ao passar o mouse */
-    transform: translateY(-10px) scale(1.2); /* Sobe 10px e aumenta 10% */
-}
-
-p {
-    font-size: 1.2rem;
-}
-
-/*INICIO SWITCH BUTTON*/
-.switch {
-    position: fixed;
-    margin-right: 0;
-    top:20px;
-    right: 20px;
-    width: 170px;
-    height: 50px;
-    background: #4caf50; /* Verde para o Brasil */
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.switch.active {
-    background: #3C3B6E; /* Azul para os EUA */
-}
-
-/* Botão deslizante */
-.toggle {
-    position: relative;
-    left: -25px;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-}
-
-.switch.active .toggle {
-    transform: translateX(50px); /* Move para a direita */
-}
-
-/* Bandeiras */
-.flag {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-}
-
-.flag.br {
-    background-image: url('https://flagcdn.com/w40/br.png'); /* Bandeira do Brasil */
-}
-
-.flag.us {
-    background-image: url('https://flagcdn.com/w40/us.png'); /* Bandeira dos EUA */
-}
-
-/* Esconde bandeira fora do estado ativo */
-.switch .flag.br {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
-.switch.active .flag.br {
-    opacity: 0; /* Esconde a bandeira do Brasil */
-}
-
-.switch .flag.us {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.switch.active .flag.us {
-    opacity: 1; /* Mostra a bandeira dos EUA */
-}
-/*FIM SWITCH BUTTON*/
-/*Seta to Up*/
-.seta-topo {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  background-color: rgba(0, 0, 0, 0.459); /* Fundo arredondado */
-  border-radius: 50%;
-  padding: 20px;
-  text-align: center;
-  cursor: pointer;
-  display: none; /* Oculto por padrão */
-  opacity: 0;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.seta-topo img {
-  width: 30px; /* Ajusta o tamanho do ícone */
-  height: 30px;
-}
-
-.seta-topo.aparecer {
-  display: block;
-  opacity: 1;
-  animation: pop 0.3s ease; /* Aplica a animação quando a classe for adicionada */
-}
-
-.seta-topo:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(1.1) translateY(-5px); /* Cresce 10% e sobe 5px */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
-}
-
-.seta-topo:active {
-  transform: scale(0.9);
-}
-
-/* Keyframes para a animação de "pop" */
-@keyframes pop {
-  0% {
-    transform: scale(0.8); /* Começa menor */
-    opacity: 0; /* Invisível */
+  .pic-ctn > img {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 100px);
+      opacity: 0;
+      animation: display 10s infinite;
   }
-  50% {
-    transform: scale(1.2); /* Faz o "pop" maior */
-    opacity: 1; /* Visível */
+    
+  img:nth-child(2) {
+      animation-delay: 2s;
+    }
+    img:nth-child(3) {
+      animation-delay: 4s;
+    }
+    img:nth-child(4) {
+      animation-delay: 6s;
+    }
+    img:nth-child(5) {
+      animation-delay: 8s;
   }
-  100% {
-    transform: scale(1); /* Volta ao tamanho normal */
-  }
-}
